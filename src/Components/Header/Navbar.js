@@ -44,7 +44,7 @@ const Header = () => {
          <div id="line3"></div>
        </button>
 
-       <a href="/venia-site/">
+       <a href="/">
          <img src={bluelogo} className={displayIn ? 'hideLogo' : 'logo'} alt="main-venia logo"/>
        </a>
 
