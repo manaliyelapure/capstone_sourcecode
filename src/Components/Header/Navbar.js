@@ -44,7 +44,7 @@ const Header = () => {
          <div id="line3"></div>
        </button>
 
-       <a href="/">
+       <a href="/capstone/">
          <img src={bluelogo} className={displayIn ? 'hideLogo' : 'logo'} alt="main-venia logo"/>
        </a>
 
@@ -104,7 +104,7 @@ const Header = () => {
          <img src={user} alt="user-icon" aria-label="user-icon" className="mobileHide" />
          <a href='#' aria-label="Sign in" className="mobileHide">Sign in</a> */}
 
-         <Link to="/venia-site/shoppingcart">
+         <Link to="/capstone/shoppingcart">
           <img src={shoppingBag} aria-label="check shoppingbag items" alt="shoppingicon"/>
            
          </Link>

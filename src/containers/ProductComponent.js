@@ -58,7 +58,7 @@ return(
     
     {products.slice(pagination.start, pagination.end).map((product) => {
     const { id, title, image, price } = product;
-    let path = `/venia-site/products/${id}`;
+    let path = `/capstone/products/${id}`;
     return (
 
       <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 aem-GridColumn--tablet--6" key={id}>
