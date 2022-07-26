@@ -1,0 +1,67 @@
+.banner1{
+    display: flex;
+    // padding: 1em;
+
+
+    img
+    {
+       padding: 1rem  0px;
+       flex: 2;
+      
+        
+    }
+}
+.banner1-left
+{
+    @extend .display-xl-48-dekstop-only ;
+    position: relative;
+    text-align: center;
+    color: white;
+    
+    padding: 1em 1em 1em 1em;
+    flex: 1;
+    background-color:#1B252C;
+
+    h1{
+        @extend .display-xl-48-dekstop-only ;
+    }
+    p{
+        @extend .display-s-20-;
+    }
+  img{
+    position: relative;
+    right: 81%;
+    top: 26%;
+    width: 2.5rem;
+  }
+  .shop-D {
+    @extend .regular-heading-s-14-;
+    color: white;
+    background-color:#1B252C;
+    border: 2px solid #FFFFFF;
+    width: 14rem;
+    padding: 0.5em;
+    border-radius: 0.75em;
+    opacity: 100%;
+  }
+  
+}
+.banner1-bottom
+{
+
+    @extend .display-xl-48-dekstop-only ;
+    position: absolute;
+    margin: auto;
+    height: 0.5rem;
+    
+    width: 10rem;
+    background-color:  $primary-brand;
+    // border-radius: 0.25rem;
+    right: 74%;
+    transform: translateX(-50%);
+    bottom: 25%
+
+
+
+}
+

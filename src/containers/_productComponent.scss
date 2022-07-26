@@ -1,0 +1,61 @@
+.card
+{
+    @extend .regualr-body-m-16-;
+    width: 100%;
+    height: 50%;
+   
+    margin: 2rem;
+}
+
+.header, .meta price , .meta
+   {
+    @extend .regualr-body-m-16-;
+    
+    font-weight: 600;
+   }
+
+
+    .filterhide
+    {
+        display: none;
+    }
+   
+.image
+{
+    width: 100%;
+}
+
+.compo-1
+{
+    padding: 1em;
+}
+.dropdown{
+    float: right;
+    p{
+        @extend .regular-heading-m-16-;
+    }
+    .desktophide{
+        display: none;
+    }
+}
+#dropbox
+{
+   padding: 0.5rem;
+   border-radius:0.5rem;
+   float: right;
+   margin-right: 5em ;
+   
+   width: 12%;
+    
+}
+.results{
+
+float: left;
+margin-left: 6em;
+margin-bottom: 1em;
+    h4{
+      @extend .regular-heading-m-16-;
+      margin: 1em;
+    }
+  }
+ 

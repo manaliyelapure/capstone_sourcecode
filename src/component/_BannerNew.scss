@@ -1,0 +1,44 @@
+.banner-new{
+    background-color: #00000033;
+    text-align: left;
+.banner-newfirst{
+   
+    padding: 4.5rem 0;
+
+ 
+    h1{
+        @extend .display-xl-48-dekstop-only;
+       
+    }
+
+    p{
+        @extend .regular-heading-m-16-;
+       
+       margin: 0.5rem 0 1.5rem;
+    }
+    .shop-btn{
+        @extend .regular-heading-s-14-;
+        color: white;
+        background-color: $primary-brand;
+        border: none;
+        width: 14rem;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        margin: 0.5rem 0 1.5rem;
+       
+       }
+       .chevron-L img {
+           
+    position: relative;
+    top: 9rem;
+        height: 2.25rem;
+        width: 1.25rem;
+       }
+    }
+}
+
+.banner-new{
+    img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Muli;
+    src: url(../Assets/muli/muli/Muli-Regular.ttf)
+   
+}
+@import '../Sass/mixins';
+@import '../Sass/variables';
+@import '../Components/Header/Navbar';
+@import '../Components/Footer/Footer';
+@import '../Sass/aemGrid';
+@import '../Components/sidebar/Sidebar';
+@import '../containers/ProductList';
+@import '../ShoppingBag/shoppingCart';
+@import '../containers/productDetails';
+@import '../containers/productComponent';
+
+@import '../Components/Banner/Banner';
+@import '../containers/Pagination';
+@import '../Sass/mobile';
+@import '../Sass/tablet';
+@import '../component/BannerNew';
+@import '../component/Bannersec';
+@import '../component/Bannermid';
+@import '../component/BannerThird';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+

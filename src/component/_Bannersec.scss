@@ -1,0 +1,69 @@
+
+.container{
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+.bannerleft-first{
+    text-align: left;
+    padding: 4.5rem 0;;
+    h1{
+     @extend .display-xl-48-dekstop-only;
+    
+    }
+    h5{
+        @extend  .regular-heading-l-20-;
+       
+        margin: 0.5rem 0 1.5rem;
+    }
+    p{
+        @extend .regular-heading-m-16-;
+        
+        margin: 0.5rem 0 1.5rem;
+    }
+    img{
+        top: 2808px;
+       left: 48px;
+       width: 250px;
+       height: 10px;
+    }
+   
+}
+
+.shopC{
+    @extend .regular-heading-s-14-;
+    color: $primary-brand;
+    background-color: white;
+    border:2px solid $primary-brand;
+    margin: 1rem;
+   
+    width: 14rem;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 3rem 0 1.5rem;
+}
+.shopN{
+    @extend .regular-heading-s-14-;
+    color: white;
+    background-color: $primary-brand;
+    border: white;
+    width: 14rem;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 1rem;
+   
+}
+
+.max-header{
+    height: 0.5rem;
+    width: 8rem;
+    background-color:  $primary-brand;
+}
+.bannerleft-sec {
+    img{
+        width: 100%;
+
+        
+    }
+
+
+}
