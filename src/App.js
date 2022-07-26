@@ -21,8 +21,8 @@ function App() {
      
          <Routes>
           
-           <Route path="/venia-site/products/:productId" element={<ProductDetails/>} />
-           <Route path="/venia-site/shoppingcart" element={<ShoppingCart/>} />
+           <Route path="/capstone/products/:productId" element={<ProductDetails/>} />
+           <Route path="/capstone/shoppingcart" element={<ShoppingCart/>} />
            <Route path="/" element={<Cart/>}/>
            
        </Routes>
