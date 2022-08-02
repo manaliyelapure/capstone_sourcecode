@@ -3,12 +3,18 @@
 //     padding-right: 12rem;
 // }
 .categories-main{
+   
     position: relative;
-    bottom: 3rem;
+    left: 10em;
     background-color: white;
+    width: 80%;
+    top: -1em;
    .banner-mid{
     padding-right: 1rem;
    }
+}
+.mid-container{
+    position: relative;
 }
 .category-img img{
     width: 100%;

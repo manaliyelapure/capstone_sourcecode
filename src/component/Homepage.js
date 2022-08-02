@@ -8,9 +8,7 @@ import BannerThird from './BannerThird';
 function Homepage() {
   return (
     <div>
-        {/* <BannerNew/>
-      <Bannersec/>
-      <BannerThird/> */}
+        
       <BannerNew/>
       <Bannermid/>
       <Bannersec/>

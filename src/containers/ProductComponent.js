@@ -5,7 +5,7 @@ import heart from '../Assets/heart.svg';
 import Pagination from '../containers/Pagination';
 import sliders from '../Assets/sliders.svg';
 
-const ProductComponent = ({ products, filtercomponent, sidebarTogglecopy, showsidebar}) => {
+const ProductComponent = ({ products, onfilterChange, sidebarTogglecopy,filtercomponent, showsidebar}) => {
   const [showperpage] = useState(6)
   const [display,setdisplay]= useState(false)
   const [pagination, stePegination] = useState({
@@ -24,9 +24,9 @@ const ProductComponent = ({ products, filtercomponent, sidebarTogglecopy, showsi
 
   const onFilterSelect = (e) => {
 
-    console.log('onFilterSelect', filtercomponent);
+    console.log('onFilterSelect', onfilterChange);
 
-    filtercomponent(e.target.value);
+    onfilterChange(e.target.value);
 
   }
 

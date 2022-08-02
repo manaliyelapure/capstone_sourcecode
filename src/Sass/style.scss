@@ -4,7 +4,7 @@ a{
 
 @font-face {
     font-family: Muli;
-    src: url(../Assets/muli/muli/Muli-Regular.ttf)
+    src: url(../Assets/font/Muli-Regular.ttf);
    
 }
 @import '../Sass/mixins';
@@ -26,6 +26,11 @@ a{
 @import '../component/Bannersec';
 @import '../component/Bannermid';
 @import '../component/BannerThird';
+@import '../Checkout/CheckOut';
+@import '../Checkout/GuestCheck';
+@import '../Checkout/PaymentCheck';
+@import '../Checkout/ReviewOrder';
+@import '../Checkout/Order';
 
 
 

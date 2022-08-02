@@ -1,0 +1,65 @@
+.check-Out {
+    h1 {
+        @extend .display-xl-48-dekstop-only;
+    }
+
+    .bottom-line {
+        margin: auto;
+        height: 0.5rem;
+
+        width: 7rem;
+        background-color: $primary-brand;
+        border-radius: 0.25rem;
+    }
+}
+.ship-info{
+    text-align: left;
+    
+}
+.ship-edit{
+    text-align: left;
+}
+.email-no{
+    text-align: left;
+}
+
+.productimage{
+    width: 6rem;
+}
+.order-btn{
+    @extend .regular-heading-s-14- ;
+    width: 281px;
+    padding: 0.5em;
+    border-radius: 0.5rem;
+    margin: 2%;
+    border: 2px solid #2A65D7;
+    border-radius: 10px;
+    background-color:#2A65D7;
+    color: white;
+    opacity: 1;
+    text-align: center;
+}
+.prod-title{
+    margin-top: 1.5em;
+    h4{
+       @extend .regualr-body-m-16- ;
+       color: #172026;
+        text-align: left;
+    }
+    p{
+        @extend .regualr-body-m-16- ;
+        text-align: left;
+    }
+}
+.c-terms{
+    padding: 1em;
+    @extend .regualr-body-m-16-;
+    color: #172026;
+    p{
+        @extend .regualr-body-m-16- ;
+    }
+    span{
+        @extend .regualr-body-m-16- ;
+        border-bottom: 1px solid #172026; 
+    }
+}

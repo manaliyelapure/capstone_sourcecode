@@ -2,13 +2,14 @@ import React, {useEffect} from "react";
 import PP_BTN from '../Assets/PP_BTN.png';
 import lock from '../Assets/lock.svg';
 import chevrondown from "../Assets/chevron-down.svg";
-import edit2 from "../Assets/edit-2.svg";
+import editblack from "../Assets/edit-black.svg";
 import trash2 from "../Assets/trash-2.svg";
 import heart from "../Assets/heart.svg";
 import { useSelector, useDispatch } from "react-redux";
 
 import checkout from '../Assets/checkout.png';
 import { productsActions } from "../redux/cartSlice";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -48,7 +49,7 @@ function ShoppingCart() {
   }
 
   return (
-    <section className="shopCart customContainer">
+    <section className="shopCart customContainer container">
       <div className="aem-Grid aem-Grid--12 shop-head">
         <h2 className="shopCart">Your Shopping Bag</h2>
         <div className="bottom-line"></div>
@@ -56,7 +57,7 @@ function ShoppingCart() {
 
       {shoppingbagitem.length === 0 ? (
         <div className="empty_cart">
-        <p> Empty Cart</p>
+        <p>Your Cart is Empty</p>
 
       </div>
       ) : (
@@ -72,7 +73,7 @@ function ShoppingCart() {
             return (
               <>
 
-              <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 leftSideCart">
+              <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 leftSideCart pr-32">
                 <div className="aem-Grid aem-Grid--12">
                   <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12  shopping-cart">
                     <img src={val.image} className="productimage" />
@@ -84,7 +85,7 @@ function ShoppingCart() {
                         <p>Size : Medium</p>
                         <p>Color : Storm</p>
                         <p>${val.price}</p>
-                      </div>
+                    </div>
 
 
 
@@ -92,12 +93,13 @@ function ShoppingCart() {
                       <div className="aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--default--3  py-1 cartBtn">
                         <button onClick={() => handleDecreaseCart(val)}>-</button>
                         <div className="quantity">{val.cartQuantity}</div>
+                       
                         <button onClick={() => handleIncreaseCart(val)}>+</button>
                       </div>
                       <div className="Outerwrap">
                       <div className=" aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--default--3  outer">
                       <div className="innerwrap">
-                        <img src={edit2} alt="edit details" />
+                        <img src={editblack} alt="edit details" />
                         <span> Edit item</span>
                       </div>
                       <button className="innerwrap " onClick={() => handleRemoveFromCart(val)}>
@@ -159,17 +161,15 @@ function ShoppingCart() {
               </div>
 
               <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--4 check" style={{textAlign:"center"}}>
-                <img src={checkout} alt="checkout button" />
+                <NavLink to='/CheckHome'><img src={checkout} alt="checkout button" /></NavLink>
               </div>
-              <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--4 " style={{textAlign:"center"}}>
-                <img src={PP_BTN} alt="paypal button" />
-              </div>
+              
 
 
             </div>
           </div>
 
-          <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--7">
+          <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--8 pr-32">
 
 
             <button class="accordion">Estimate your Shipping <span>shipping to 91001 <img src={chevrondown} /> </span></button>

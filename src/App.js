@@ -9,6 +9,13 @@ import ShoppingCart from './ShoppingBag/ShoppingCart';
 
 import { Component } from 'react';
 import Homepage from './component/Homepage';
+import CheckHome from './Checkout/CheckHome';
+import CheckOut from './Checkout/CheckOut';
+import GuestCheck from './Checkout/GuestCheck';
+import PaymentCheck from './Checkout/PaymentCheck';
+import ReviewOrder from './Checkout/ReviewOrder';
+import Order from './Checkout/Order';
+
 
 
 
@@ -17,13 +24,19 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Homepage/> */}
-     
+      
+      {/* <CheckHome/> */}
          <Routes>
-          
+          <Route path="/" element={<Homepage/>}/>
+          <Route path="/Cart" element={<Cart/>}/>
+          <Route path="/CheckHome" element={<CheckHome/>}/>
+          {/* <Route path="/GuestCheck" element={<GuestCheck/>}/>
+          <Route path="/PaymentCheck" element={<PaymentCheck/>}/>
+          <Route path="/ReviewOrder" element={<ReviewOrder/>}/> */}
+          <Route path="/Order" element={<Order/>}/>
            <Route path="/capstone/products/:productId" element={<ProductDetails/>} />
            <Route path="/capstone/shoppingcart" element={<ShoppingCart/>} />
-           <Route path="/" element={<Cart/>}/>
+          
            
        </Routes>
       

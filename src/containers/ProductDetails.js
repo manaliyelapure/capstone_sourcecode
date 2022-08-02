@@ -73,7 +73,7 @@ const ProductDetails = (props) => {
 
   ];
   return (
-    <section>
+    <section className="container">
       <div className="aem-Grid aem-Grid--12">
         {selectedProduct.title ? (
           <div className="ui placeholder segment">
@@ -109,13 +109,13 @@ const ProductDetails = (props) => {
 
                         </div> */}
 
-                        <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--7">
+                        <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--8">
                           <SimpleImageSlider
-                            width={600}
+                            width={500}
                             height={750}
                             images={images}
                             showBullets={true}
-                            showNavs={true}
+                            showNavs={false}
                           />
                         </div>
 
@@ -141,7 +141,7 @@ const ProductDetails = (props) => {
 
                         <Rating />
                       </div>
-                      <div className="size">
+                      {/* <div className="size">
                         <h2>color</h2>
                         <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 row-data">
 
@@ -151,8 +151,8 @@ const ProductDetails = (props) => {
                           <span><img src={Swatch04} alt='grey-button' className="grey" aria-label="grey-button" /></span>
 
                         </div>
-                      </div>
-                      <div className="size">
+                      </div> */}
+                      {/* <div className="size">
                         <h2>Size</h2>
                         <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 datarowsec">
 
@@ -163,7 +163,7 @@ const ProductDetails = (props) => {
                           <button aria-label="Xtra large button">XL</button>&nbsp;
                         </div>
 
-                      </div>
+                      </div> */}
                       <div className="size">
                         <h2>Quantity</h2>
 
@@ -192,13 +192,16 @@ const ProductDetails = (props) => {
                   </div>
                 </div>
                 <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12">
-                  <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--7 description">
+                  <div className=" description">
 
                     <h1>{selectedProduct.title}</h1>
                     <h3>Description</h3>
                     <p>{selectedProduct.description}</p>
                   </div>
-                  <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--5 details">
+                  <div className="max-header">
+
+                  </div>
+                  {/* <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--5 details">
 
                     <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
                       <label className="main-details">Details</label>
@@ -226,7 +229,7 @@ const ProductDetails = (props) => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
               </div>

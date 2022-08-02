@@ -220,6 +220,7 @@ h1{
   display: flexbox;
   flex-direction: row;
   justify-content: space-around;
+ 
 
   h1{
     @extend  .display-l-36- ;
@@ -275,3 +276,8 @@ h1{
   }
 }
  
+.max-header{
+  height: 0.5rem;
+  width: 8rem;
+  background-color:  $primary-brand;
+}

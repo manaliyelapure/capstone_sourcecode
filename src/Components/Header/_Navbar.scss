@@ -1,14 +1,19 @@
 header {
   background-color: #1363DF;
-    position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
     
     padding: 1em;
     border-bottom: none;
     
   
     .logo {
+      
       letter-spacing: 0.25rem;
-      font-size: 1.5rem;
+      font-size: 2rem;
+      color: white;
+      
     }
   
     .logo.toggle {
@@ -96,8 +101,13 @@ header {
         
       display: flex;
       justify-content: center;
-      justify-content: space-between;
-      width: 90vw;
+      align-items: center;
+      // justify-content: space-between;
+      // width: 90vw;
+      nav{
+        margin-left: 10%;
+        margin-right: 10%;
+      }
    
     }
   
@@ -106,9 +116,25 @@ header {
       justify-content: center;
       align-items: center;
 
-      span{
-        color: white
-      }
+    
+
+      .badge{
+        border-radius: 0.27rem;
+    }
+    .rounded-pill{
+        border-radius: 50rem!important;
+    }
+    .badge-notification{
+      position: absolute;
+      font-size: -0.4rem;
+      margin-top: -1.1rem;
+      margin-left: -0.5rem;
+      padding: 0.2em 0.45em;
+    }
+    .bg-danger{
+        background-color: black!important;
+        color: #FFFFFF;
+    }
       
   label, a{
     @extend .regualr-body-m-16-;

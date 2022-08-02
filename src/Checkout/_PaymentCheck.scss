@@ -1,0 +1,96 @@
+
+.payment-method{
+
+
+.card-in{
+    h4{
+                @extend .regular-body-l-20- ;
+                padding: 1em 0 1em 0;
+            }
+    input {
+                // @extend  .regualr-body-m-16-;
+                border-radius: 0.5rem;
+                padding: 11px 0 13px 0;
+                color: #181C24;
+                width: 100%;
+                margin-top: 1em ;
+                margin-bottom: 0.5em;
+        
+            }
+            label{
+                @extend .regualr-body-m-16-;
+            }
+}
+.continue{
+    @extend .regular-heading-s-14- ;
+        width: 281px;
+        padding: 0.5em;
+        border-radius: 0.5rem;
+        margin: 2%;
+        border: 2px solid #2A65D7;
+        border-radius: 10px;
+        background-color: white;
+        color: #2A65D7;
+        opacity: 1;
+        text-align: center;
+}
+.R-label{
+    margin-right: 2em;
+    height: 20px;
+    width: 20px;
+   
+}
+.label-i{
+    vertical-align: top;
+}
+.card-details{
+    text-align: left;
+}
+.pay-info{
+    text-align: left;
+    font: normal normal 600 20px/25px Muli;
+letter-spacing: 0px;
+color: #172026;
+opacity: 1;
+}
+.cvv img{
+padding-top: 3em;
+
+}
+.radio-c{
+    label{
+
+        width: 30px;
+        padding: 3.27px 0 8px 0;
+        text-align: left;
+        font: normal normal normal 16px/25px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+        opacity: 1;
+       
+  
+    }
+    
+        
+    
+}
+.shiping-info{
+    text-align: left;
+    padding: 4em;
+    border:  1px solid #D1D3D6;
+    font: normal normal 600 20px/25px Muli;
+
+  
+}
+.edit-button{
+        float: right;
+        text-align: right;
+        font: normal normal 600 16px/22px Muli;
+        letter-spacing: 0px;
+        background: none;
+        border: none;
+        color: #1363DF;
+        opacity: 1;
+    
+}
+}

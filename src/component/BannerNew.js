@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import bannerthird from '../Assets/banner-third.png';
 import chevronleft from '../Assets/chevron-left.svg';
 
@@ -12,7 +13,7 @@ function BannerNew() {
        <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--1 chevron-L">
          <img src={chevronleft}/>
        </div>
-       <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--11 ">
+       <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--11 chevron-Left">
        <h1>
         Shop the new <br/>
         Signature Collection
@@ -22,7 +23,7 @@ function BannerNew() {
         tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis <br/>
         aliquam faucibus purus.
         </p>
-        <button className='shop-btn'>SHOP NOW</button>
+        <NavLink to="/Cart"><button className='shop-btn'>SHOP NOW</button></NavLink>
        </div>
        
      </div>

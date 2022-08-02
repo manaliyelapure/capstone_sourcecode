@@ -45,7 +45,8 @@ const Header = () => {
        </button>
 
        <a href="/capstone/">
-         <img src={bluelogo} className={displayIn ? 'hideLogo' : 'logo'} alt="main-venia logo"/>
+         {/* <img src={bluelogo} className={displayIn ? 'hideLogo' : 'logo'} alt="main-venia logo"/> */}
+         <h3 className={displayIn ? 'hideLogo' : 'logo'} alt="main-venia logo">VENIA</h3>
        </a>
 
        <nav role="navigation">
@@ -105,10 +106,9 @@ const Header = () => {
          <a href='#' aria-label="Sign in" className="mobileHide">Sign in</a> */}
 
          <Link to="/capstone/shoppingcart">
-          <img src={shoppingBag} aria-label="check shoppingbag items" alt="shoppingicon"/>
-           
-         </Link>
-        <span>{totalcartitem}</span>
+          <img src={shoppingBag} aria-label="check shoppingbag items" alt="shoppingicon"/><span className="badge rounded-pill badge-notification bg-danger">{totalcartitem}</span> 
+          </Link>
+        
        </div>
 
 

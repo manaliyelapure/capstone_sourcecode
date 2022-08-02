@@ -1,9 +1,16 @@
 .banner-new{
     background-color: #00000033;
     text-align: left;
+    .chevron-Left{
+       margin-left: 14rem;
+    }
+
 .banner-newfirst{
    
-    padding: 4.5rem 0;
+  
+        /* position: absolute; */
+        padding-top: 7em;
+        padding-bottom: 7em;
 
  
     h1{
@@ -13,7 +20,7 @@
 
     p{
         @extend .regular-heading-m-16-;
-       
+        line-height: 26px;
        margin: 0.5rem 0 1.5rem;
     }
     .shop-btn{
@@ -22,7 +29,7 @@
         background-color: $primary-brand;
         border: none;
         width: 14rem;
-        padding: 0.5em;
+        padding: 0.5em 0 0.5em 0;
         border-radius: 0.5em;
         margin: 0.5rem 0 1.5rem;
        
