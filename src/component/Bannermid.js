@@ -7,8 +7,8 @@ import monitor from '../Assets/monitor.png';
 
 function Bannermid() {
   return (
-    <section className='container mid-container'>
-        <div className='aem-Grid aem-Grid--12  categories-main'>
+    <section className=' mid-container'>
+        <div className='aem-Grid aem-Grid--12  categories-main container'>
         <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--3 banner-mid">
         <div className='category-img'>
              <img src={whiteshirt}/>

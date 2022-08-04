@@ -49,7 +49,7 @@ function ShoppingCart() {
   }
 
   return (
-    <section className="shopCart customContainer container">
+    <section className="shopCart customContainer">
       <div className="aem-Grid aem-Grid--12 shop-head">
         <h2 className="shopCart">Your Shopping Bag</h2>
         <div className="bottom-line"></div>
@@ -95,6 +95,8 @@ function ShoppingCart() {
                         <div className="quantity">{val.cartQuantity}</div>
                        
                         <button onClick={() => handleIncreaseCart(val)}>+</button>
+
+                       
                       </div>
                       <div className="Outerwrap">
                       <div className=" aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--default--3  outer">
@@ -161,7 +163,7 @@ function ShoppingCart() {
               </div>
 
               <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--4 check" style={{textAlign:"center"}}>
-                <NavLink to='/CheckHome'><img src={checkout} alt="checkout button" /></NavLink>
+                <NavLink to='/CheckHome'><button className="shopbagbutton" alt="checkout button">ChECKOUT</button></NavLink>
               </div>
               
 

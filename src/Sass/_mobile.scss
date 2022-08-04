@@ -48,6 +48,8 @@
         --unnamed-line-spacing-17-5: 17.5px;
         }
         
+        
+       
         /* Character Styles */
         .display-xl-48-dekstop-only {
         font-family: var(--unnamed-font-family-source-serif-pro);
@@ -200,10 +202,11 @@
 
         .logo {
             position: absolute;
-            top: 20%;
+            top: 6%;
             left: 50%;
             transform: translateX(-50%);
             width: 7rem;
+            color: white;
         }
          
 
@@ -312,6 +315,11 @@
 
     
 }
+.single-image{
+    width: 145px;
+    height: 160;
+    max-width: 100%;
+}
 
 .details 
 {
@@ -367,40 +375,34 @@
 }
 /*-------banner--------*/
 
-.banner{
-    position: relative;
+.banner {
     flex-direction: column-reverse;
+    padding: 0;
 
+    .banner-left {
+      padding: 1em 0;
+      margin: -1em 0.25em 0 0.25em;
 
-    .img{
-        padding: 1em 1em 0em 1em;
-        margin-bottom: 5em;
-    }
-}
+      width: calc(100% - 0.5em);
 
+      h2 {
 
-
-.banner-left{
-    padding: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    margin: auto;
-
-    width: 75%;
-
-    h1{
-       font-size: 2rem;
         color: $white;
-
+        font-size: 3.5rem;
         padding: 0 0 1em 0;
-    }
-    
-   
-}
+      }
 
+      div {
+        margin-bottom: 0.25em;
+      }
+    }
+
+    img {
+      padding: 0;
+      width: 100%;
+      height: 15rem;
+    }
+  }
 /*------------product-listing----------*/
 .prod-list{
     margin-top: 10em;
@@ -454,49 +456,291 @@
    .outer{
     display: none;
    }
+
+   .shopbagbutton{
+    color: white;
+   }
 /*-----------bannerThird-----------*/
-.banner1{
-    position: relative;
+.footerBanner {
     flex-direction: column-reverse;
 
 
-    .img{
-        padding: 1em 1em 0em 1em;
-        margin-bottom: 5em;
+    .standingMan {
+      padding: 0;
+      width: 100%;
     }
-}
+
+    .footerBannerInner {
+      width: 95%;
 
 
+      margin: -2rem auto 2rem auto;
 
-.banner1-left{
-    padding: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+      p {
+        padding-top: 1em;
+      }
 
-    margin: auto;
+      button {
+        margin: 2em 0;
+      }
 
-    width: 75%;
+      .mapiconWrapper {
+        left: 18%;
+        top: 0;
+        margin-top: -2em;
 
-    h1{
-       font-size: 2rem;
-        color: $white;
 
-        padding: 0 0 1em 0;
+      }
     }
-    
-   
-}
 
+  }
 
 /*----bannnerNew-------*/
 .chevron-L{
     display: none;
 }
+.banner-new{
+    padding: 0.5em;
+}
+.ThreeDotsWrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+    .ThreeDots {
+      margin: 0.25em;
+      height: 1px;
+      width: 1px;
+      border-radius: 50%;
+
+      background: #666666 0% 0% no-repeat padding-box;
+    }
+
+    .ThreeDotsActive {
+      opacity: 0.3;
+    }
+}
+
+/*----bannerThird----*/
+
+.banner1{
+    padding: 0.5em;
+}
+
+.mapiconWrapper {
+    left: 18%;
+    top: 0;
+    margin-top: -2em;
+
+
+  }
+//   .container{
+//     padding: 0;
+//   }
+/*------Bannermd-------*/
+// .mid-container{
+//     padding: 0;
+// }
+
+/*---------home---------*/
+.mid-container{
+    display: none;
+}
+
+/*---------bannernew home----*/
+.homeBanner {
+    flex-direction: column-reverse;
+    position: relative;
+
+
+    .homeInnerBanner {
+
+      position: absolute;
+      background: transparent linear-gradient(181deg, #F1F1F100 0%, #F0F0F0 100%) 0% 0% no-repeat padding-box;
+
+      bottom: 0;
+      width: auto;
+
+      div {
+        padding: 0.5em;
+
+        h2 {
+
+          width: 100%;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        .collectionBtnDiv {
+          margin: auto;
+        }
+
+        button {
+
+          margin-bottom: 0.25em;
+
+        }
+
+
+
+        .homeBannerImg {
+          background-image: url(../Assets/banner-f.png);
+          background-size: cover;
+        }
+
+        .ThreeDotsWrapper {
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+
+          .ThreeDots {
+            margin: 0.25em;
+            height: 1px;
+            width: 1px;
+            border-radius: 50%;
+
+            background: #666666 0% 0% no-repeat padding-box;
+          }
+
+          .ThreeDotsActive {
+            opacity: 0.3;
+          }
+        }
+      }
+
+
+    }
+
+    .homeImage {
+      width: 100%;
+      height: calc(95vh - 3.75rem);
+    }
+  }
+
+  .mobileHide2 {
+    display: none;
+  }
+
+  .fourImageOuter {
+
+    margin: auto;
+
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 4em;
+
+    .fourImageInner {
+      padding: 1em 0;
+      flex-direction: column;
+      align-items: center;
+
+      width: 90%;
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
+
+/*---------checkout--------*/
+.pr-32{
+    padding: 0;
+}
+.sign-in{
+    display: none;
+}
+.prod-price{
+    width: 10rem;
+    height: 12rem;
+    padding: 0;
+}
+.follow{
+    display: none;
+}
+.sign-in{
+    visibility: hidden;
+}
+.shiping-input{
+    input{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 2px solid #B5B7BC;
+        border-radius: 8px;
+        opacity: 1;
+        padding-right: 1em;
+        padding: 1em;
+        max-width: 100%;
+     
+    }
+   
+}
+/*---------productlist----------*/
+.produFilters {
+
+
+  * {
+    .ui.cards>.card>.image {
+      /* height: 250px; */
+      height: 5rem;
+      padding: 0;
+    }
+
+    .ui.cards>.card>.image>img {
+      height: 90px;
+      width: 110px;
+      max-width: 100%;
+
+    }
+}
 
 }
 
+}
 
+/*-------checkhome--------*/
+@media (max-width : 786px) {
+    .dekstop-button{
+        display: none;
+    }
+    .card-info{
+        input{
+            width: 100%;
+        }
+    }
+}
+@media (min-width: 786px) {
+    .mobile-button{
+      display: none;
+    }
+}
+@media (max-width : 786px) {
+    .state-input{
+        input{
+            width: 100%;
+        }
+    }
+}
+@media (max-width : 786px) {
+    .shiping-input{
+        input{
+            width: 100%;
+        }
+    }
+}
 
+@media (min-width : 786px) {
+    .contact{
+        input{
+            width: 90%;
+        }
+    }   
+}
 
+@media (min-width : 786px) {
+    .shiping-input {
+        input{
+            width: 45%;
+        }
+    }
+}

@@ -31,7 +31,7 @@ function Cart() {
 
  
 
-  const filterProduct =(cat) => {
+    const filterProduct =(cat) => {
     const updatedList = data.filter((x)=>x.category === cat.category);
     console.log("men's clothing",updatedList);
    setProducts(updatedList);

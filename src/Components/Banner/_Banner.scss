@@ -1,51 +1,100 @@
-.banner{
-    display: flex;
+// .banner{
+//     display: flex;
    
 
 
-    img
-    {
-       padding: 1rem 1rem 1rem 0px;
-       flex: 2;
-      
+//     img
+//     {
+//        padding: 1rem 1rem 1rem 0px;
+//        flex: 2;
+//        object-fit: cover;
+//        max-width: 100%;
+//        width: 950px;
+//        height: 325px;
         
-    }
-}
-.banner-left
-{
-    @extend .display-xl-48-dekstop-only ;
-    position: relative;
-    text-align: center;
-    color: white;
+//     }
+// }
+// .banner-left
+// {
+//     @extend .display-xl-48-dekstop-only ;
+//     position: relative;
+//     text-align: center;
+//     color: white;
     
-    padding: 1em 1em 1em 1em;
-    flex: 1;
-    background-color: black;
+//     padding: 1em 1em 1em 1em;
+//     flex: 1;
+//     background-color: black;
 
-    h1{
-        @extend .display-xl-48-dekstop-only ;
+//     h1{
+//         @extend .display-xl-48-dekstop-only ;
        
     
       
-    }
+//     }
   
-}
-.banner-bottom
-{
+// }
+// .banner-bottom
+// {
 
-    @extend .display-xl-48-dekstop-only ;
-    position: absolute;
-    margin: auto;
-    height: 0.5rem;
+//     @extend .display-xl-48-dekstop-only ;
+//     position: absolute;
+//     margin: auto;
+//     height: 0.5rem;
     
-    width: 10rem;
-    background-color:  $primary-brand;
-    border-radius: 0.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 25%
+//     width: 10rem;
+//     background-color:  $primary-brand;
+//     border-radius: 0.25rem;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     bottom: 25%
 
 
 
+// }
+
+.banner{
+    display: flex;
+    padding: 1em;
+    
+    margin: auto;
+    .banner-left{
+        @extend .display-xl-48-dekstop-only;
+        
+
+        background-color: black;
+        
+        //width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        text-align: center;
+        
+        color: white;
+        padding: 1em 1em 1em 1em;
+       
+         width: 30%;
+        
+        div{
+           
+            margin: auto;
+            height: 0.5rem;
+            
+            width: 10rem;
+            background-color:  $primary-brand;
+            border-radius: 0.25rem;
+          
+
+        }
+
+    }
+    img{
+        // flex: 2;
+        width: 70%;
+        height: 20rem;
+        object-fit: cover;
+        padding: 1em 0 1em 0;
+    }
+    
 }
-

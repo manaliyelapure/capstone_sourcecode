@@ -21,11 +21,21 @@
     @extend  .regular-heading-m-16-;
     font-size: 1rem;
     letter-spacing: 1px;
+    line-height: 1.5rem;
   }  
 h1{
   @extend  .display-l-36-;
+
+  font: normal normal 600 36px/45px Source Serif Pro;
+letter-spacing: 0px;
+color: #172026;
+opacity: 1;
 }
 }
+
+
+
+
 
 .ui teal tag label {
   @extend .regular-heading-l-20-;
@@ -98,9 +108,11 @@ h1{
     @extend .regular-heading-s-14-;
     width: 19.875rem;
     height: 2.5rem;
-    color: $white;
+    color: white;
     margin: 1em;
+    border-radius: 10px;
     text-align: center;
+    text-transform: uppercase;
     
     span{
       position: relative;
@@ -109,41 +121,7 @@ h1{
   }
 
 
-.blue
-{
-  height: 2.5rem;
-  width: 4rem;
-  background-color: $primary-d1;
-  border-radius: 20%;
-  margin: 0.25em;
-}
 
-.pink
-{
-  height: 2.5rem;
-  width: 4rem;
-  background-color: $pink;
-  border-radius: 20%;
-  margin: 0.25em;
-}
-
-.grey
-{
-  height: 2.5rem;
-  width: 4rem;
-  background-color:  $gray-m1;
-  border-radius: 20%;
-  margin: 0.25em;
-}
-
-.black
-{
-  height: 2.5rem;
-  width: 4rem;
-  background-color: $unnamed-color-172026;
-  border-radius: 20%;
-  margin: 0.25em;
-}
 
 .row-data
 {
@@ -223,10 +201,30 @@ h1{
  
 
   h1{
-    @extend  .display-l-36- ;
+    
+    margin: 0.75em 0 0.75em 0;
+    @extend  .display-l-36-;
+
+    font: normal normal 600 36px/45px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  }
+  h3{
+    @extend  .regular-heading-l-20-;
+    font: normal normal 600 20px/25px Muli;
+    margin: 0.5em 0 0.5em 0;
+    letter-spacing: 0px;
+color: #172026;
+opacity: 1;
   }
   p{
     @extend .regular-heading-m-16-;
+    font: normal normal normal 16px/24px Muli;
+letter-spacing: 0px;
+color: #172026;
+opacity: 1;
+margin: 0.5em 0 2.5em 0;
   }
 }
 
@@ -280,4 +278,32 @@ h1{
   height: 0.5rem;
   width: 8rem;
   background-color:  $primary-brand;
+}
+.single-img{
+  .rsis-image {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    
+  }
+}
+.single-img{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+  .rsis-image {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    
+  }
+  
+}
+
+.ProdImg {
+  width: 45%;
+  padding: 0.25em;
+  // position: relative;
+  // left: 70%;
+  // top: 0;
+  // transform: translateX(-50%);
 }

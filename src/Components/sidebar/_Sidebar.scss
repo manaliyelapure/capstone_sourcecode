@@ -15,30 +15,33 @@
     text-align: left;
     margin: 1rem;
 }
-
+.filter-icon{
+    h3{
+        @extend  .regular-heading-l-20-;
+    }
+}
+.sidebar-demo{
+    @extend .regualr-body-m-16-;
+}
 .Attribute-first {
-    padding: 1rem;
-    
+  
    
     margin-left: auto;
     text-align: left;
 
     input {
         margin: 1em;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #91959C;
     }
-    p {
-     @extend .regualr-body-m-16-;
-     padding-top: 2rem;
-     justify-content: space-between;
-     margin: 2rem;
+    label{
+        @extend   .regualr-body-m-16-;
+        vertical-align: super;
+        color: #181C24;
     }
 
-    h4 {
-       @extend .regualr-body-m-16-;
-        
-        font-weight: 600;
-        
-    }
+   
    
 }
 .cross_icon{
@@ -46,51 +49,10 @@
 }
 
 
-.attribute-sec {
-    padding: 1em;
-    margin-right: 1rem;
-   
-    text-align: left;
-    input {
-        margin: 1em;
-    }
 
-    h4 {
-        @extend .regualr-body-m-16-;
-        
-        font-weight: 600;
-        
-    }
-
-  
-}
-
-.attribute-third {
-    padding: 0.5em;
-    margin-right: 0.5em;
-    
-    text-align: left;
-   
-}
-
-.attribute-four {
-    padding: 0.5em;
-    margin-right: 0.5em;
-   
-    text-align: left;
-    input {
-        margin: 1em;
-       
-    }
-
-    h4 {
-        @extend .regualr-body-m-16-;
-       
-        font-weight: 600;
-    }
 
    
-}
+
 
 .Row1 {
     display: flex;
@@ -106,75 +68,3 @@
 
 }
 
-.R1 {
-
-    @extend .button-row;
-    background-color:  $gray-d2;
-}
-
-.R2 {
-    @extend .button-row;
-    background-color: $white;
-    border:  $gray-l2;
-   
-}
-
-.R3 {
-    @extend .button-row;
-    background-color:  $positive-1;
-    
-
-}
-
-.R4 {
-    @extend .button-row;
-    background-color: $yellowish;
-   
-}
-
-.Row2 {
-    display: flex;
-    padding: 0.5em;
-    
-}
-
-.R5 {
-    @extend .button-row;
-    background-color:    $primary-l1;
-    
-}
-
-.R6 {
-    @extend .button-row;
-    background-color:$negative-1;
-    
-
-}
-
-.R7 {
-    @extend .button-row;
-    background-color:  $purple;
-    
-}
-
-.R8 {
-    @extend .button-row;
-    background-color:  $pink-d;
-   
-}
-
-.Row3 {
-    display: flex;
-    padding: 0.5em;
-  
-}
-
-.R9 {
-    @extend .button-row;
-    background-color:$orange;
-    }
-
-.R10 {
-    @extend .button-row;
-    background-color: $negative-2;
-    }

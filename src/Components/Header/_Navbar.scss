@@ -1,6 +1,6 @@
 header {
   background-color: #1363DF;
-  position: fixed;
+  // position: fixed;
   width: 100%;
   z-index: 1;
     
@@ -9,9 +9,9 @@ header {
     
   
     .logo {
-      
+      @extend .regular-heading-l-20- ;
       letter-spacing: 0.25rem;
-      font-size: 2rem;
+      
       color: white;
       
     }
@@ -105,8 +105,8 @@ header {
       // justify-content: space-between;
       // width: 90vw;
       nav{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 32%;
+        margin-right: 17%;
       }
    
     }

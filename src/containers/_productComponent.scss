@@ -7,11 +7,11 @@
     margin: 2rem;
 }
 
-.header, .meta price , .meta
+.header, .meta-price  , .meta
    {
     @extend .regualr-body-m-16-;
+ 
     
-    font-weight: 600;
    }
 
 
@@ -22,7 +22,9 @@
    
 .image
 {
-    width: 100%;
+    max-width: 100%;
+    width: 319px;
+height: 382px;
 }
 
 .compo-1

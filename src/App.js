@@ -6,15 +6,10 @@ import ProductDetails from "./containers/ProductDetails";
 import Footer from './Components/Footer/Footer';
 import Cart from './containers/Cart';
 import ShoppingCart from './ShoppingBag/ShoppingCart';
-
+import Order from './PlaceOrder/Order';
 import { Component } from 'react';
 import Homepage from './component/Homepage';
 import CheckHome from './Checkout/CheckHome';
-import CheckOut from './Checkout/CheckOut';
-import GuestCheck from './Checkout/GuestCheck';
-import PaymentCheck from './Checkout/PaymentCheck';
-import ReviewOrder from './Checkout/ReviewOrder';
-import Order from './Checkout/Order';
 
 
 

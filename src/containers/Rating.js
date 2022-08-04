@@ -39,7 +39,7 @@ export default function MyComponent() {
                 onClick={() => handleClick(index + 1)}
                 onMouseOver={() => handleMouseOver(index + 1)}
                 onMouseLeave={handleMouseLeave}
-                color={(hoverValue || currentValue) > index ? colors.black : colors.grey}
+                color={(hoverValue || currentValue) > index ? colors.black : colors.white}
                 style={{
                   marginRight: 10,
                   cursor: "pointer"

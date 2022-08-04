@@ -44,18 +44,39 @@
   margin: 0;
 }
 
-.ui.cards > .card > .image {
-  height: 250px;
+/* .ui.cards > .card > .image {
+  height: 200px;
   padding: 20px;
   background: #fff;
   margin: auto;
 }
 .ui.cards > .card > .image > img {
+  width: 319px;
+ height: 382px;
+
   height: 100%;
   max-width: 100%;
   width: auto;
+} */
+
+
+.ui.cards>.card>.image {
+ 
+  height: 191px;
+  padding: 1.25em;
+  background: #fff;
+  margin: auto;
+}
+
+.ui.cards>.card>.image>img {
+  height: 191px;
+  width: 170px;
+  max-width: 100%;
+  /* width: 100%; */
+
 }
 .ui.cards > .card > .content > .header {
+  margin-top: 2em;
   height: 48px;
   overflow: hidden;
   margin-bottom: 5px;
@@ -64,6 +85,7 @@
   height: 36px;
   margin-bottom: 0px;
   overflow: hidden;
+  
 }
 .ui.cards > .card .meta.price {
   margin-bottom: 5px;

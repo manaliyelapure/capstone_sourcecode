@@ -51,7 +51,7 @@ const Header = () => {
 
        <nav role="navigation">
          <ul className={isActive ? "nav-links nav-active" : "nav-links"}>
-           <li aria-label="Shop Categories" className="desktopHide borderBottomHead">Shop Categories</li>
+           {/* <li aria-label="Shop Categories" className="desktopHide borderBottomHead">Shop Categories</li> */}
            <li>
              <a href="/Home/" aria-label="women products">
                Home

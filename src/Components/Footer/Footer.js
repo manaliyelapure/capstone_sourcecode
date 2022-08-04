@@ -8,7 +8,7 @@ function Footer() {
     return (
         <footer>
             <div className='demo-GridRowExample-markup'>
-                <div className='aem-Grid aem-Grid--default--12 aem-Grid--tablet--6 aem-Grid--phone--1 demo-Grid footer-first '>
+                <div className='aem-Grid aem-Grid--default--12 aem-Grid--tablet--6 aem-Grid--phone--1 demo-Grid footer-first'>
                     <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--1 demo-GridColumn demo-GridColumn--image'>
                         <h4>Account</h4>
                         <ul>

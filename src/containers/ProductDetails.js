@@ -5,6 +5,7 @@ import { Rating } from "react-simple-star-rating";
 import { useDispatch, useSelector } from "react-redux";
 import { productsActions } from "../redux/cartSlice";
 import Slider from "react-slick";
+
 import SimpleImageSlider from "react-simple-image-slider";
 
 import feather from '../Assets/feather.svg';
@@ -73,7 +74,7 @@ const ProductDetails = (props) => {
 
   ];
   return (
-    <section className="container">
+    <section>
       <div className="aem-Grid aem-Grid--12">
         {selectedProduct.title ? (
           <div className="ui placeholder segment">
@@ -84,7 +85,7 @@ const ProductDetails = (props) => {
                   <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--6">
                     <div className="column-lp">
                       <div className="aem-Grid aem-Grid--12">
-                        <div className="aem-GridColumn aem-GridColumn--default--4">
+                        <div className="aem-GridColumn aem-GridColumn--default--3">
                           <div className="aem-Grid aem-Grid--12 col-lp">
                             <img className="ui-fluid-image" src={selectedProduct.image} alt="products" />
                           </div>
@@ -109,15 +110,27 @@ const ProductDetails = (props) => {
 
                         </div> */}
 
-                        <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--8">
+                        {/* <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--7 single-img">
                           <SimpleImageSlider
-                            width={500}
-                            height={750}
+                            width={552}
+                            height={680}
                             images={images}
                             showBullets={true}
                             showNavs={false}
                           />
-                        </div>
+                        </div> */}
+              <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 single-img">
+                <div className="ProdImgDiv">
+                  <SimpleImageSlider
+
+                    width={450}
+                    height={500}
+                    images={images}
+                    showBullets={true}
+                    showNavs={false}
+                  />
+                </div>
+              </div>
 
 
                       </div>
@@ -141,29 +154,7 @@ const ProductDetails = (props) => {
 
                         <Rating />
                       </div>
-                      {/* <div className="size">
-                        <h2>color</h2>
-                        <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 row-data">
 
-                          <span><img src={Swatch01} alt='blue-button' className="blue" aria-label="blue-button" /></span>
-                          <span><img src={Swatch02} alt='pink-button' className="pink" aria-label="pink-button" /></span>
-                          <span><img src={Swatch03} alt='black-button' className="black" aria-label="black-button" /></span>
-                          <span><img src={Swatch04} alt='grey-button' className="grey" aria-label="grey-button" /></span>
-
-                        </div>
-                      </div> */}
-                      {/* <div className="size">
-                        <h2>Size</h2>
-                        <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 datarowsec">
-
-                          <button aria-label="xtra small button">XS</button>&nbsp;
-                          <button aria-label="Small button">S</button>&nbsp;
-                          <button aria-label="Medium button">M</button>&nbsp;
-                          <button aria-label="Large button">L</button>&nbsp;
-                          <button aria-label="Xtra large button">XL</button>&nbsp;
-                        </div>
-
-                      </div> */}
                       <div className="size">
                         <h2>Quantity</h2>
 
@@ -191,8 +182,8 @@ const ProductDetails = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12">
-                  <div className=" description">
+                <div className="aem-Grid aem-Grid--12 aem-GridColumn--phone--12  aem-GridColumn--tablet--12 ">
+                  <div className=" description ">
 
                     <h1>{selectedProduct.title}</h1>
                     <h3>Description</h3>
@@ -201,35 +192,7 @@ const ProductDetails = (props) => {
                   <div className="max-header">
 
                   </div>
-                  {/* <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--5 details">
 
-                    <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-                      <label className="main-details">Details</label>
-                      <div className="detailsWrapper ">
-                        <div className="firstColumn">
-                          <div className="detailsInner">
-                            <img src={slack} alt='slack icon' />
-                            <p>Sweat-wicking</p>
-                          </div>
-                          <div className="detailsInner">
-                            <img src={feather} alt='feather icon' />
-                            <p>Lightweight fabric</p>
-                          </div>
-                        </div>
-                        <div className="secondColumn mx-1">
-                          <div className="detailsInner">
-                            <img src={wind} alt='wind icon' />
-                            <p>Breathable</p>
-                          </div>
-
-                          <div className="detailsInner">
-                            <img src={layers} alt='layers icon' />
-                            <p>69% nylon, 31% lycra</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
 
               </div>
