@@ -80,8 +80,8 @@ const [show3div, setShow3div] = useState(false);
 
   return (
    
-    <div>
-       <div className='aem-Grid aem-Grid--12 aem-Grid--tablet--6 aem-Grid--phone--1 demo-Grid checkout'>
+    <div className='container'>
+       <div className='aem-Grid aem-Grid--12 aem-Grid--tablet--6 aem-Grid--phone--1 demo-Grid checkout '>
        <div className="aem-Grid aem-Grid--12 check-Out">
                 <h1>Checkout</h1>
                 <div className="bottom-line"></div>
@@ -100,18 +100,18 @@ const [show3div, setShow3div] = useState(false);
                                         <label htmlFor="Email">Email</label><br />
                                         <input type="text" value={inputdata.Email}
                                             onChange={userData}
-                                            name="Email" id="Email" placeholder="abc@xyz.com" />
+                                            name="Email" id="Email" placeholder="abc@xyz.com" required />
                                     </div>
                                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--3 aem-GridColumn--phone--1 demo-GridColumn demo-GridColumn--image contact">
                                         <label htmlFor="Phone">Phone Number</label><br />
                                         <input type="text" value={inputdata.Phone}
                                             onChange={userData}
-                                            name="Phone" id="Phone" placeholder="(222) 222-2222" />
+                                            name="Phone" id="Phone" placeholder="(222) 222-2222" required />
                                     </div>
                                 </div>
                                 <div></div>
                                 <h4>1. Shipping Information</h4>
-                                <div className="aem-Grid aem-Grid--12  aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 demo-Grid demo-Grid shiping-input">
+                                <div className="aem-Grid aem-Grid--12  aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--1 demo-Grid demo-Grid shiping-input">
                                     <label htmlFor="Country">Country</label><br />
                                     <input type="text" value={inputdata.Country}
                                         onChange={userData}
@@ -147,7 +147,7 @@ const [show3div, setShow3div] = useState(false);
                                         <label htmlFor="City">City</label><br />
                                         <input type="text" value={inputdata.City}
                                             onChange={userData}
-                                            name="City" id="City" placeholder="Altadena" />
+                                            name="City" id="City" placeholder="Altadena" required/>
                                     </div>
                                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 demo-GridColumn state-input">
                                         <div className="aem-Grid aem-Grid--12 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 demo-Gridd">
@@ -157,7 +157,7 @@ const [show3div, setShow3div] = useState(false);
                                                     onChange={userData}
                                                     name="State" id="State" placeholder="California" />
                                             </div>
-                                            <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 demo-GridColumn zip-input">
+                                            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 demo-GridColumn zip-input">
                                                 <label htmlFor="ZIP">ZIP</label><br />
                                                 <input type="text" value={inputdata.ZIP}
                                                     onChange={userData}
@@ -201,7 +201,7 @@ const [show3div, setShow3div] = useState(false);
                         {shiping &&
                         <div className='aem-Grid aem-Grid--12 ship-method'>
                             <h4>2. Shipping Method</h4>
-                            <div className='aem-GridColumn aem-GridColumn--default--6 demo-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--phone--12 radio-btn'>
+                            <div className='aem-GridColumn aem-GridColumn--default--8 demo-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--phone--12 radio-btn'>
                                 <input type="radio" id="html" name="fav_language" value="Standard Shipping (4-8 business days via USPS) FREE" onChange={e => setRedio(e.target.value)} />
                                 <label for="html">Standard Shipping (4-8 business days via USPS) FREE</label><br />
                                 <input type="radio" id="html" name="fav_language" value="Express Delivery (2-5 business days via USPS) $17.95" onChange={e => setRedio(e.target.value)} />
@@ -247,13 +247,13 @@ const [show3div, setShow3div] = useState(false);
                                             <label htmlFor="expdate">Expiration Date</label><br />
                                             <input type="text" value={paydata.expdate}
                                                 onChange={paymentData}
-                                                name="expdate" id="expdate" placeholder="" />
+                                                name="expdate" id="expdate" placeholder="" className='expdate'/>
                                         </div>
                                         <div>
                                             <label htmlFor="cvv">CVV</label><br />
                                             <input type="text" value={paydata.cvv}
                                                 onChange={paymentData}
-                                                name="cvv" id="cvv" placeholder="" />
+                                                name="cvv" id="cvv" placeholder="" className='paycvvdata maininput' />
                                         </div>
                                         <div className='help-circle'>
                                        <img src={helpcircle} alt="helpcircle" />
@@ -298,13 +298,13 @@ const [show3div, setShow3div] = useState(false);
                                         return (
                                             <>
 
-                                                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12   demo-GridColumn demo-GridColumn--separator">
-                                                    <div className="aem-Grid aem-Grid--12 demo-Grid">
-                                                        <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--3 demo-GridColumn demo-GridColumn--separator ">
+                                                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12   demo-GridColumn demo-GridColumn--separator ">
+                                                    <div className="aem-Grid aem-Grid--12 demo-Grid o-place ">
+                                                        <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--3 aem-GridColumn--phone--4 demo-GridColumn demo-GridColumn--separator ">
                                                             <img src={val.image} className="productimage" />
 
                                                         </div>
-                                                        <div className=" aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--9 aem-GridColumn--phone--9 demo-GridColumn demo-GridColumn--separatorpy-1 prod-title">
+                                                        <div className=" aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--tablet--9 aem-GridColumn--phone--7 demo-GridColumn demo-GridColumn--separatorpy-1 prod-title">
                                                             <h4>{val.title}</h4>
                                                             <p>Size : Medium</p>
                                                             <p>Color : Storm</p>
@@ -330,8 +330,8 @@ const [show3div, setShow3div] = useState(false);
                    
                         </div>}</div>}
                         </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 demo-GridColumn">
-                    {show && <div className=" aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 demo-GridColumn sign-in">
+                        <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 demo-GridColumn">
+                    {show && <div className=" aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 demo-GridColumn sign-in">
                         <h3>Sign in for Express <br /> Checkout</h3>
                         <button>SIGN IN</button>
                     </div>}

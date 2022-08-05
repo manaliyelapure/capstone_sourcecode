@@ -5,7 +5,8 @@ import heart from '../Assets/heart.svg';
 import Pagination from '../containers/Pagination';
 import sliders from '../Assets/sliders.svg';
 
-const ProductComponent = ({ products, onfilterChange, sidebarTogglecopy,filtercomponent, showsidebar}) => {
+const ProductComponent = ({ products, onfilterChange,filtercomponent,sidebarTogglecopy,
+  showsidebar}) => {
   const [showperpage] = useState(6)
   const [display,setdisplay]= useState(false)
   const [pagination, stePegination] = useState({
@@ -30,7 +31,7 @@ const ProductComponent = ({ products, onfilterChange, sidebarTogglecopy,filterco
 
   }
 
-  const sidebarToggle2 = ()=> {
+  const sidebarTogglefun= ()=> {
     sidebarTogglecopy(!showsidebar);
 }
 
@@ -43,7 +44,7 @@ return(
       <span>20 results</span>
   </div>
  <div  className="filterhide">
-  <img src={sliders}  alt="filter products" aria-label="filter icon" onClick={sidebarToggle2} /><span>filter products</span>
+  <img src={sliders}  alt="filter products" aria-label="filter icon" onClick={sidebarTogglefun} /><span>filter products</span>
  </div>
  
   <select id="dropbox" onChange={onFilterSelect}>

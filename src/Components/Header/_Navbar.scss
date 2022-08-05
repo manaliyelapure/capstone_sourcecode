@@ -2,11 +2,19 @@ header {
   background-color: #1363DF;
   // position: fixed;
   width: 100%;
-  z-index: 1;
+  // z-index: 1;
     
     padding: 1em;
     border-bottom: none;
-    
+    .active{
+      border-bottom: white;
+      
+      background: #DFF6FF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+opacity: 1;
+width: 60px;
+height: 7px;
+    }
   
     .logo {
       @extend .regular-heading-l-20- ;
@@ -31,7 +39,7 @@ header {
       div {
         width: 1.75rem;
         height: 0.25rem;
-        background-color: black;
+        background-color: white;
         margin: 0.25rem;
         transition: transform 0.3s ease-in;
       }
@@ -119,23 +127,35 @@ header {
     
 
       .badge{
-        border-radius: 0.27rem;
-    }
-    .rounded-pill{
-        border-radius: 50rem!important;
-    }
-    .badge-notification{
-      position: absolute;
-      font-size: -0.4rem;
-      margin-top: -1.1rem;
-      margin-left: -0.5rem;
-      padding: 0.2em 0.45em;
-    }
-    .bg-danger{
-        background-color: black!important;
-        color: #FFFFFF;
-    }
-      
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: -40px 0 0 25px ;
+        z-index: 3;
+      width: 15px;
+      height: 15px;
+      background-color: black;
+      border-radius: 50%;
+      padding: 0.25em;
+      }
+      .burger{
+ #line1{
+        color: white;
+      }
+      #line2{
+        color: white;
+      }
+      #line3{
+        color: white;
+      }
+      }
+     
+      .shopbagicon{
+       z-index: -3;
+
+      }
   label, a{
     @extend .regualr-body-m-16-;
   }

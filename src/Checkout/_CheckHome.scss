@@ -25,7 +25,7 @@
 
 .checkout {
     
-
+    padding-bottom: 3em;
 
     h1 {
         text-align: center;
@@ -91,10 +91,14 @@
         padding-right: 1em;
         padding: 1em;
         max-width: 100%;
-        width: 49%;
+        width: 44%;
     }
 }
-
+.shiping-address{
+    h3{
+        text-align: left;
+    }
+}
 .state-input {
     text-align: left;
     input {
@@ -190,9 +194,12 @@
         color: #172026;
         opacity: 1;
     }
-
+.maininput{
+    width: 14rem;
+    max-width: 100%;
+}
     input {
-        
+     
         border: 2px solid var(--primary-brand);
         background: #FFFFFF 0% 0% no-repeat padding-box;
         border: 2px solid #1363DF;
@@ -214,7 +221,7 @@
         padding: 1em;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         border: 2px solid #B5B7BC;
-        width: 50%;
+        width: 71%;
         border-radius: 8px;
         opacity: 1;
         
@@ -234,14 +241,18 @@
 
     input {
         width: 100%;
+        max-width: 100%;
     }
 }
-
+.expdate{
+    margin-right: 7em;
+}
 .cvv {
     padding-left: 17%;
 
     input {
-        width: 50%;
+        width: 40%;
+        max-width: 100%;
     }
 }
 
@@ -258,6 +269,7 @@
 
 .edit-button {
     button {
+        margin: auto;
         float: right;
         text-align: right;
         font: normal normal 600 16px/22px Muli;
@@ -266,6 +278,8 @@
         border: none;
         color: #1363DF;
         opacity: 1;
+        margin-top: -1.5em;
+        margin-right: 1em;
     }
 
 }
@@ -284,6 +298,9 @@
         letter-spacing: 0px;
         color: #172026;
         opacity: 1;
+    }
+    button{
+        margin: auto;
     }
 }
 
@@ -427,7 +444,8 @@
 }
 
 .prod-title{
-    margin-top: 1.5em;
+    margin-top: -1em;
+   
     h4{
         overflow: hidden;
         max-width: 15rem;
@@ -479,9 +497,10 @@
 }
 
 .prod-price {
-    height: 19rem;
+    max-width: 100%;
+    height: 17rem;
     width: 26rem;
-    padding: 2em;
+  
     border: 1px solid #D1D3D6;
     border-radius: 2px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -506,7 +525,7 @@
     border: 1px solid #D1D3D6;
     border-radius: 2px;
     height: 5rem;
-    width: 26rem;
+    // width: 26rem;
    
     opacity: 1;
 
@@ -547,7 +566,7 @@
 
 
 .check-Out{
-   
+  
     h1{
         @extend .display-xl-48-dekstop-only;
     }
@@ -665,8 +684,6 @@
     color: #1363DF;
     opacity: 1;
 }
-
-
 .radio-p{
     margin: 2em 0 2em 0;
     padding-right: 1em;
@@ -679,5 +696,77 @@
 .pay-label{
     vertical-align: super;
     padding: 0.5em;
+}
+
+
+
+@media (max-width : 786px) {
+    .dekstop-button{
+        display: none;
+    }
+    .card-info{
+        input{
+            width: 100%;
+        }
+    }
+}
+@media (min-width: 786px) {
+    .mobile-button{
+      display: none;
+    }
+}
+@media (max-width : 786px) {
+    .state-input{
+        input{
+            width: 96%;
+        }
+    }
+}
+@media (max-width : 786px) {
+    .shiping-input{
+        input{
+            width: 96%;
+        }
+    }
+}
+
+@media (min-width : 786px) {
+    .contact{
+        input{
+            width: 90%;
+        }
+    }   
+}
+
+@media (min-width : 786px) {
+    button{
+
+        .edit-button{
+        
+            margin-top: -1.5em;
+            margin-right: 1em;
+        }
+    }
+    
+    }   
+
+@media(min-width :786px)
+{
+    .shiping-info
+  {
+    
+        button{
+            margin-top: 0.5em;
+            margin-right: 1em;
+        }
+    
+  }
+}
+
+@media (min-width : 786px) {
+    .o-place{
+       margin-top: 0.5em;
+       margin-bottom: 0.5em;
+    }   
 }
 

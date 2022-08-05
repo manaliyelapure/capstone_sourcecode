@@ -1,141 +1,119 @@
-// .banner-new{
-//     background-color: #00000033;
-//     text-align: left;
-//     .chevron-Left{
-//        margin-left: 10rem;
-//        p{
-//         @extend .regualr-body-m-16-;
-//         line-height: 26px;
-//         margin: 0.5rem 0 1.5rem;
-//        }
 
-//        h1{
-//         @extend .display-xl-48-dekstop-only;
-       
-//     }
-//     }
-
-// .banner-newfirst{
-   
-  
-   
-//         padding-top: 7em;
-//         padding-bottom: 7em;
-
+    .shop-btn{
+        @extend .regular-heading-s-14-;
+        color: white;
+        background-color: $primary-brand;
+        border: none;
+        width: 15rem;
+        padding: 1em;
+        border-radius: 10px;
+        margin: 0.5rem 0 1.5rem;
+        font-weight: bold;
+       }
  
-   
+       .ThreeDotsWrapper {
+        display: none;
+       }
 
-//     .shop-btn{
-//         @extend .regular-heading-s-14-;
-//         color: white;
-//         background-color: $primary-brand;
-//         border: none;
-//         width: 15rem;
-//         padding: 1em;
-//         border-radius: 10px;
-//         margin: 0.5rem 0 1.5rem;
-//         font-weight: bold;
-//        }
-//        .chevron-L img {
-           
-//     position: relative;
-//     top: 9rem;
-//         height: 2.25rem;
-//         width: 1.25rem;
-//         margin-left: 3rem;
-//        }
-//     }
-// }
-// .ThreeDotsWrapper{
-//     display: none;
-// }
-// .banner-new{
-//     img{
-//             object-fit: cover;
-//             width: 100%;
-//             max-height: 600px;
-//             object-position: 0px -190px;
-//     }
-// }
-
-.homeBanner {
-    display: flex;
-
-
-    .homeInnerBanner {
+       .shop-menu {
         display: flex;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .banner1-image {
         width: 50%;
-
-
-        text-align: center;
-
-        color: black;
-        padding: 0;
-        // flex: 2;
-        background-color: #e5e5e7;
-        padding: 0 2em;
-
-        div {
-            display: flex;
-
-            align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 1em 0;
-
-            h2 {
-                @extend .display-l-36-;
-                width: 60%;
-                text-align: start;
-            }
-
-            p {
-                padding: 1em 0;
-                text-align: start;
-            }
-
-            button {
-
-                @extend .regular-heading-s-14-;
-                        color: white;
-                        background-color: $primary-brand;
-                        border: none;
-                        width: 15rem;
-                        padding: 1em;
-                        border-radius: 10px;
-                        margin: 0.5rem 0 1.5rem;
-                        font-weight: bold;
-                color: $white;
-            }
-
-            .homeBannerImg {
-                background-image: url(../Assets/banner-f.png);
-
-
-            }
-
-            .ThreeDotsWrapper {
-                display: none;
-            }
-        }
-
+        height: 550px;
         img {
-            width: 0.75em;
-            padding: 1em;
+            width: 100%;
+            height: 590px;
+        }
+    }
+  
+    .home-banner {
+        padding-left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+                    text-align: left;
+                    font: normal normal 600 48px/60px Source Serif Pro;
+                    letter-spacing: 0px;
+                    color: #172026;
+                    opacity: 1;
+                }
+                    p {
+            text-align: left;
+            font: normal normal normal 16px/24px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            opacity: 1;
+        }
+    
+        button {
+            width: 220px;
+            height: 40px;
+            background-color: #1F39FF;
+            border-radius: 10px;
+            box-shadow: 0px 3px 6px #39373729;
+            text-align: center;
+            font: normal normal bold 14px/16px Muli;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+    }
+    .frist-banner {
+        width: 50%;
+        background-color: #E5E5E7;
+        display: flex;
+    }
+    
+    .arrow-left {
+        padding-top: 25%;
+        img {
+            width: 20px;
+            height: 40px;
+            opacity: 1;
+        }
+    }
+    @media (max-width : 768px) {
+    .banner1-image {
+        width: 100%;
+        background: transparent linear-gradient(181deg, #F1F1F100 0%, #F0F0F0 100%) 0% 0% no-repeat padding-box;
+    }
+    .frist-banner{
+        width: 100%;
+        height: 252px;
+        transform:translateY(-250px);
+        background: none;
+    }
+    .arrow-left{
+        display: none;
+    }
+       .home-banner{
+      
+        h1{
+            
+            letter-spacing: var(--unnamed-character-spacing-0);
+text-align: center;
+font: normal normal 600 36px/45px Source Serif Pro;
+letter-spacing: 0px;
+color: #1B252C;
+opacity: 1;
         }
 
+        .p1{
+          display: none;
+        }
+    } 
+
+}
+
+@media (min-width : 768px){
+    .p2{
+        display: none;
     }
-
-
-    .homeImage {
-        // flex: 2;
-        width: 50%;
-        height: 25rem;
-        object-fit: cover;
-        object-position: 15% 30%;
-
-    }
-
-
 }

@@ -9,9 +9,16 @@ import { Loading } from "./Loading";
 
 
 
-const ProductPage = ({sidebarTogglecopy, showsidebar,loading,products,onfilterChange}) => {
-
-  
+const ProductPage = ({ sidebarTogglecopy,
+   showsidebar,loading,products,onfilterChange,handleChange}) => {
+      const onFilterSelect = (e) => {
+         console.log("onFilterSelect", handleChange);
+     
+         handleChange(e.target.value);
+       };
+   const toggleSidebar = () => {
+      sidebarTogglecopy(!showsidebar);
+    };
  
   return (
    

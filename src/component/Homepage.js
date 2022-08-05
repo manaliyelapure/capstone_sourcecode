@@ -7,12 +7,20 @@ import BannerThird from './BannerThird';
 
 function Homepage() {
   return (
-    <div>
-        
-      <BannerNew/>
+    <div className='aem-Grid aem-Grid--12'>
+        <div className='banner-N'>
+        <BannerNew/>
+        </div>
+      <div className='banner-M'>
       <Bannermid/>
-      <Bannersec/>
+      </div>
+      <div className='banner-S'>
+     <Bannersec/>
+     </div>
+      <div className='banner-T'>
       <BannerThird/> 
+      </div>
+     
     </div>
   )
 }

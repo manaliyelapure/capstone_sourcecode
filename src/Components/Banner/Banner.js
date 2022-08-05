@@ -23,7 +23,7 @@ function Banner
 
         <div className='banner'>
             <span className='banner-left'>
-                 <h2>Men’s Outerwear</h2>
+                 <p>Men’s <br/> Outerwear</p>
                  <div></div>
             </span>
            <img src={bannerh} alt='Athlete woman'/>

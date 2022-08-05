@@ -1,69 +1,128 @@
 
-// .container{
-//     padding-left: 1.5em;
-//     padding-right: 1.5em;
-// }
-.bannerleft-first{
-    text-align: left;
-    padding: 4.5rem 0;;
-    h1{
-     @extend .display-xl-48-dekstop-only;
+.banner3-main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.banner3-box {
     
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+
+    h3 {
+        @extend .display-xl-48-dekstop-only;
+        text-align: left;
+        font: normal normal 600 48px/60px Source Serif Pro;
+        letter-spacing: 0px;
+        color: #172026;
+        opacity: 1;
+        
     }
-    h5{
+
+    .p1 {
         @extend  .regular-heading-l-20-;
-       
-        margin: 0.5rem 0 1.5rem;
+        text-align: left;
+        font: normal normal 600 20px/25px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+        opacity: 1;
     }
-    p{
-        @extend .regular-heading-m-16-;
-        line-height: 23px;
-        margin: 0.5rem 0 0 0;
+
+    p {
+        @extend .regualr-body-m-16-;
+        margin: 0.5em 0 0.5em 0;
+            line-height: 1.5em;
+        text-align: left;
+        font: normal normal normal 16px/24px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+        opacity: 1;
     }
-    img{
-        top: 2808px;
-       left: 48px;
-       width: 250px;
-       height: 10px;
-    }
-   
 }
 
-.shopC{
-    @extend .regular-heading-s-14-;
-    color: #1F39FF;
-    background-color: white;
-    border: 2px solid #1F39FF;
-    width: 15rem;
-    padding: 0.75rem;
-    border-radius: 0.5em;
-    margin: 1.5em 3.5em 3em 0;
-}
-.shopN{
-    @extend .regular-heading-s-14-;
-    color: white;
-    background-color: $primary-brand;
-    border: white;
-    width: 15rem;
-    padding: 0.75rem;
-    border-radius: 0.5em;
-    margin: 1.5em 0 3em 0;
-   
-}
 
-.max-header{
-    height: 0.5rem;
-    width: 8rem;
-    background-color:  $primary-brand;
+
+.baneer3-button{
+    margin-top: 0.25em;
 }
-.bannerleft-sec {
-    img{
-        max-width: 100%;
+.hero2-image {
+    width: 40%;
+
+    img {
         width: 100%;
-        height: 600px;
-        object-fit: cover;
-        object-position: top;
+    }
+}
+
+@media (max-width : 786px) {
+    .hero2-image {
+        width: 100%;
+        margin-top: 15em;
     }
 
+    .banner3-box {
+        width: 100%;
+        padding: 0%;
 
+        h3 {
+            font: normal normal 600 36px/45px Source Serif Pro;;
+            text-align: center;
+        }
+
+        .p1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            
+        }
+    }
+
+    .baneer3-button {
+       
+        flex-direction: column;
+        align-content: center;
+
+        button {
+            width: 220px;
+            height: 40px;
+        }
+    }
+}
+
+.baneer3-button {
+    display: flex;
+    flex-wrap: wrap;
+
+    .SHOP-COLLECTION {
+        width: 221px;
+        height: 40px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 2px solid #2A65D7;
+        border-radius: 10px;
+        text-align: center;
+        font: normal normal bold 14px/16px Muli;
+        letter-spacing: 0px;
+        color: #1363DF;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    .SHOP-NOW {
+        width: 221px;
+        height: 40px;
+        background: #1363DF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #39373729;
+        border-radius: 10px;
+        text-align: center;
+        font: normal normal bold 14px/16px Muli;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+        border: #1363DF;
+    }
 }

@@ -1,0 +1,33 @@
+.banner-N{
+    width: 100%;
+}
+.banner-M{
+    width: 100%;
+}
+.banner-S{
+    width: 100%;
+    // padding-left: 10%;
+    // padding-right: 10%;
+}
+
+.banner-T{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding: 2em 0 4em 0;
+}
+
+
+@media (min-width : 786px) {
+    .banner-T {
+     
+      width: 100%;
+      padding: 1em 0;
+    }
+  }
+  @media (max-width : 786px) {
+    .banner-N{
+        width: 100%;
+        height: 100vh;
+    }
+}

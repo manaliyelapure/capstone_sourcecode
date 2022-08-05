@@ -49,7 +49,7 @@ function ShoppingCart() {
   }
 
   return (
-    <section className="shopCart customContainer">
+    <section className="shopCart customContainer container">
       <div className="aem-Grid aem-Grid--12 shop-head">
         <h2 className="shopCart">Your Shopping Bag</h2>
         <div className="bottom-line"></div>

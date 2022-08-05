@@ -69,17 +69,17 @@
 }
 
 .ui.cards>.card>.image>img {
-  height: 191px;
-  width: 170px;
+  height: 150px;
   max-width: 100%;
-  /* width: 100%; */
+  width: 150px;
+ 
 
 }
 .ui.cards > .card > .content > .header {
-  margin-top: 2em;
-  height: 48px;
+ 
+  height: 42px;
   overflow: hidden;
-  margin-bottom: 5px;
+ 
 }
 .ui.cards > .card > .content > .description {
   height: 36px;
@@ -152,4 +152,14 @@
   color: #fff;
   font-size: 18px;
   margin-left: 0;
+}
+
+@media(max-width:786px){
+  .ui.cards>.card>.image>img {
+    height: 120px;
+    max-width: 100%;
+    width: 120px;
+   
+  
+  }
 }

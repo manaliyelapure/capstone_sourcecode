@@ -7,8 +7,8 @@ import monitor from '../Assets/monitor.png';
 
 function Bannermid() {
   return (
-    <section className=' mid-container'>
-        <div className='aem-Grid aem-Grid--12  categories-main container'>
+    <section className=' mid-container container'>
+        <div className='aem-Grid aem-Grid--12  categories-main'>
         <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--3 banner-mid">
         <div className='category-img'>
              <img src={whiteshirt}/>
@@ -25,7 +25,7 @@ function Bannermid() {
        </div>
         
         <div className='category-shop'>
-             <h5>Shop Women</h5>
+             <h5>Shop Men</h5>
              <p>Lorem ipsum dolor sit amet</p>
              
         </div>
@@ -36,7 +36,7 @@ function Bannermid() {
         <img src={whitering}/>
         </div>
         <div className='category-shop'>
-             <h5>Shop Women</h5>
+             <h5>Jewellery</h5>
              <p>Lorem ipsum dolor sit amet</p>
              
         </div>
@@ -47,7 +47,7 @@ function Bannermid() {
        <img src={monitor}/>
        </div>
         <div className='category-shop'>
-             <h5>Shop Women</h5>
+             <h5>Electronics</h5>
              <p>Lorem ipsum dolor sit amet</p>
              
         </div>

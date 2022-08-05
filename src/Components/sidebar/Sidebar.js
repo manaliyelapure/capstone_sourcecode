@@ -1,14 +1,13 @@
-// import React from 'react';
-
 import React, { useState, useEffect } from "react";
 import sliders from '../../Assets/sliders.svg';
 import x from '../../Assets/x.svg';
 
-function Sidebar({ showsidebar, sidebarTogglecopy, filterProduct }) {
-
+function Sidebar({ handleChange , sidebarTogglecopy, showsidebar,categories}) {
+   
     const sidebarToggle = () => {
         sidebarTogglecopy(!showsidebar);
-    }
+      };
+        
     const [isActive, setActive] = useState(false);
     const [isSelected, setisSelected] = useState(false);
 
@@ -36,7 +35,11 @@ function Sidebar({ showsidebar, sidebarTogglecopy, filterProduct }) {
     return (
 
         <React.Fragment>
-            <aside className={`${showsidebar ? ' herobanner sideBarToggle' : 'herobanner sideBar-active'}`} >
+            <aside
+        className={`${showsidebar ? " sideBar sideBarToggle" : "sideBar sideBar-active"
+          }`}
+        role="complementary"
+      >
 
                 <div className='aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--3 sidebar-demo'>
                     <p>Clothing / Women’s / Outerwear</p>
@@ -47,23 +50,50 @@ function Sidebar({ showsidebar, sidebarTogglecopy, filterProduct }) {
                     </div>
                     <hr />
               
-                    {data.map((category) => {
-                    return (
-                        <>
-                     <div className='Attribute-first' >
-                    <input type="checkbox" id='chk1-label' aria-label="checkbox" onClick={() => {
-                        setisSelected(!isSelected);
-                        filterProduct({category})
-                    }} />
-                    <label htmlFor="chk1-label"> {category}</label><br />
-                   
-                </div>
-
-
-                        </>
-                    )
-                })} 
                     
+
+
+
+                     <div className="Attribute-first">
+              <input
+                type="checkbox"
+                id="chk2-label"
+                name="electronics"
+                onChange={handleChange}
+                checked={categories.electronics}
+              />
+              <label htmlFor=""> Electronics</label>
+            </div>
+            <div className="Attribute-first">
+              <input
+                type="checkbox"
+                id="chk2-label"
+                name="jewelery"
+                onChange={handleChange}
+                checked={categories.jewelery}
+              />
+              <label htmlFor=""> Jewelery</label>
+            </div>
+            <div className="Attribute-first">
+              <input
+                type="checkbox"
+                id="chk2-label"
+                name="men's clothing"
+                onChange={handleChange}
+                checked={categories["men's clothing"]}
+              />
+              <label htmlFor=""> Men's Clothing</label>
+            </div>
+            <div className="Attribute-first">
+              <input
+                type="checkbox"
+                id="chk2-label"
+                name="women's clothing"
+                onChange={handleChange}
+                checked={categories["women's clothing"]}
+              />
+              <label htmlFor=""> Women's Clothing</label>
+            </div>
                     <hr />
 
                 </div>

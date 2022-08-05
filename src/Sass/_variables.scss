@@ -202,3 +202,38 @@
     .pr-32{
       padding-right: 32px;
     }
+
+    .container{
+      width: 80%;
+      margin: auto;
+    }
+
+
+
+    // @mixin flexAlign {
+    //   display: flex;
+    //   align-items: center;
+    // }
+    
+    // @mixin flexAlignJust {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    
+    // }
+    
+    // @mixin flexJust {
+    //   display: flex;
+    //   justify-content: center;
+    
+    // }
+    
+    // .shopBtn {
+    //   @extend .regular-body-s-14-;
+    //   background-color: $primary-brand;
+    //   color: $white;
+    //   padding: 0.5em 2em;
+    //   border-radius: 0.6em;
+    //   border: none;
+    //   outline: none;
+    // }

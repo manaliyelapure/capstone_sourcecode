@@ -24,7 +24,8 @@ function Order() {
         }
     }, []);
   return (
-    <div className='aem-Grid aem-Grid--12 demo-Grid order-page'>
+    <section className="container">
+         <div className='aem-Grid aem-Grid--12 demo-Grid order-page'>
      <div className="aem-Grid aem-Grid--12 check-Out">
                 <h1>Order Successful!</h1>
                 <div className="bottom-line"></div>
@@ -40,11 +41,16 @@ function Order() {
                         <h4>Shipping Information</h4>
                             <p>{items.Email}</p>
                             <p>{items.Phone}</p>
+                            
                         </div>
+                       
                         <div className="aem-GridColumn  aem-GridColumn--tablet--8 aem-GridColumn--phone--12  aem-GridColumn--default--6 demo-GridColumn">
                             <h4>Shipping Method</h4>
+                            <p></p>
                             <p>{rediolocaldata}</p>
+
                         </div>
+                      
                     </div>
                     <div className="aem-Grid aem-Grid--12">
                         <div className="aem-GridColumn  aem-GridColumn--tablet--8 aem-GridColumn--phone--12  aem-GridColumn--default--6 demo-GridColumn">
@@ -68,11 +74,11 @@ function Order() {
 
                                                 <div className="aem-GridColumn aem-GridColumn--default--6  aem-GridColumn--tablet--8 aem-GridColumn--phone--12  demo-GridColumn demo-GridColumn--separator">
                                                     <div className="aem-Grid aem-Grid--12 demo-Grid">
-                                                        <div className="aem-GridColumn aem-GridColumn--default--3  aem-GridColumn--tablet--8 aem-GridColumn--phone--12  demo-GridColumn demo-GridColumn--separator shopping-img">
+                                                        <div className="aem-GridColumn aem-GridColumn--default--4  aem-GridColumn--tablet--4 aem-GridColumn--phone--4  demo-GridColumn demo-GridColumn--separator shopping-img">
                                                             <img src={val.image} className="productimage" />
 
                                                         </div>
-                                                        <div className=" aem-GridColumn aem-GridColumn--default--9   aem-GridColumn--tablet--8 aem-GridColumn--phone--12 demo-GridColumn demo-GridColumn--separatorpy-1 shoping-detail">
+                                                        <div className=" aem-GridColumn aem-GridColumn--default--7   aem-GridColumn--tablet--7 aem-GridColumn--phone--7 demo-GridColumn demo-GridColumn--separatorpy-1 shoping-detail">
                                                             <h4>{val.title}</h4>
                                                             <p>Size : Medium</p>
                                                             <p>Color : Storm</p>
@@ -102,7 +108,7 @@ function Order() {
 
 
         <div className="aem-GridColumn aem-GridColumn--default--4 demo-GridColumn follow ">
-                    <h2>Give us a follow <br />to SAVE 20% <br /> on your next order.</h2>
+                    <p>Give us a follow <br />to SAVE 20% <br /> on your next order.</p>
                     <div>
                     <img src={instagramw} alt='instagram-logo'/>
                     <img src={facebookw} alt='facebook-logo'/>
@@ -113,6 +119,8 @@ function Order() {
 
 
     </div>
+    </section>
+   
   )
 }
 

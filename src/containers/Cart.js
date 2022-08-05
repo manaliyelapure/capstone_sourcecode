@@ -6,7 +6,8 @@ import ProductListing  from '../containers/ProductListing';
 import axios from "axios";
 
 function Cart() {
-  const[sidebartoggle, setsidebartoggle] = useState(true);
+  // const[sidebartoggle, setsidebartoggle] = useState(true);
+   const [sidebartoggle, setsidebartoggle] = useState(true); 
 
   const [data, setData] = useState([]);
   const [products, setProducts] = useState([]);
@@ -23,20 +24,36 @@ function Cart() {
     // setFilter(await response.json());
     setData(response.data);
     setLoading(false);
+    setFilter(response.data);
   };
+
+
 
   useEffect(() => {
     fetchProducts();
   }, []);
 
- 
+  const [filter, setFilter] = useState(data);
+  const [categories, setCategories] = useState({
+    electronics: false,
+    jewelery: false,
+    "men's clothing": false,
+    "women's clothing": false,
+  });
 
-    const filterProduct =(cat) => {
-    const updatedList = data.filter((x)=>x.category === cat.category);
-    console.log("men's clothing",updatedList);
-   setProducts(updatedList);
+  const handleChange = (e) => {
+    const { name } = e.target;
+    setCategories(() => {
+      return { ...categories, [name]: !categories[name] };
+    });
+  };
+
+  //   const filterProduct =(cat) => {
+  //   const updatedList = data.filter((x)=>x.category === cat.category);
+  //   console.log("men's clothing",updatedList);
+  //  setProducts(updatedList);
  
-  }
+  // }
 
   const [sort, setSort] = useState()
 
@@ -57,7 +74,12 @@ function Cart() {
   console.log("Products :", products);
 
 
-
+  const checkedProducts = Object.entries(categories)
+  .filter((category) => category[1])
+  .map((category) => category[0]);
+const filteredProducts = data.filter(({ category }) =>
+  checkedProducts.includes(category)
+);
 
   return (
     <div className="aem-Grid aem-Grid--12 Cart">
@@ -65,14 +87,20 @@ function Cart() {
 
       <div className="aem-GridColumn  aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--3">
         <Sidebar    sidebarTogglecopy={setsidebartoggle}
-        showsidebar={sidebartoggle} filterProduct={filterProduct} />
+            showsidebar={sidebartoggle}   handleChange={handleChange}
+            categories={categories}
+            />
      
       </div>
 
       <div className="aem-GridColumn aem-GridColumn--default--9  prod-list">
         <ProductListing  
-       products={products} onfilterChange={onfilterChange} loading={loading} />
-       
+        onfilterChange={onfilterChange} loading={loading} 
+       sidebarTogglecopy={setsidebartoggle}
+            showsidebar={sidebartoggle}  
+            products={filteredProducts.length === 0 ? filter : filteredProducts}
+            handleChange={handleChange} />
+      
       </div>
     </div>
   )

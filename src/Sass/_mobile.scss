@@ -1,6 +1,9 @@
 /*===========================NavBAr=======================*/
 @media (min-width: 320px) and (max-width: 740px) {
-
+    .container {
+        width: 90%;
+        margin: auto;
+      }
     :root {
 
         /* Colors: */
@@ -335,6 +338,7 @@
   }
 .visible-content{
     width: 100%;
+    color: white;
 }
 .product-details{
     text-align: center;
@@ -353,6 +357,51 @@
     position: relative;
     right: 5%;
 }
+
+
+
+// .prodDetailsMain {
+//     padding: 0;
+
+    .ProdImgDiv {
+      max-width: 100%;
+    }
+
+//     .prodDetailsText {
+//       h1 {
+//         font-size: 24px;
+//       }
+
+//     }
+
+//     .descTitle {
+//       font-size: 24px;
+//     }
+
+
+
+
+
+    .ProdImgDivParent {
+      padding: 0;
+    }
+
+//     .prodDetailsAlign {
+//       padding: 0;
+//     }
+
+//     .maxHeaderInProdDetails {
+//       max-width: 100%;
+//       margin: 0.5em auto;
+//       text-align: center;
+
+//     }
+//   }
+
+  .imgCarousal {
+    display: none;
+  }
+
 /*-----footer-----------*/
 .f-bottom
 {
@@ -385,7 +434,7 @@
 
       width: calc(100% - 0.5em);
 
-      h2 {
+      p {
 
         color: $white;
         font-size: 3.5rem;
@@ -456,44 +505,52 @@
    .outer{
     display: none;
    }
-
-   .shopbagbutton{
-    color: white;
+.check{
+.shopbagbutton
+    {
+        color: white;
+    }
+  
+}
+   .shop-head{
+    margin: 1em 0 1em 0;
    }
+   .details-pricing{
+    text-align: center;
+}
+
 /*-----------bannerThird-----------*/
-.footerBanner {
-    flex-direction: column-reverse;
+// .footerBanner {
+//     flex-direction: column-reverse;
 
 
-    .standingMan {
-      padding: 0;
-      width: 100%;
-    }
+//     .standingMan {
+//       padding: 0;
+//       width: 100%;
+//     }
 
-    .footerBannerInner {
-      width: 95%;
-
-
-      margin: -2rem auto 2rem auto;
-
-      p {
-        padding-top: 1em;
-      }
-
-      button {
-        margin: 2em 0;
-      }
-
-      .mapiconWrapper {
-        left: 18%;
-        top: 0;
-        margin-top: -2em;
+//     .footerBannerInner {
+//       width: 95%;
 
 
-      }
-    }
+//       margin: -2rem auto 2rem auto;
 
-  }
+//       p {
+//         padding-top: 1em;
+//       }
+
+//       button {
+//         margin: 2em 0;
+//       }
+
+//       .mapiconWrapper {
+//         padding-left: 22%;
+//         transform: translateY(355px);
+
+//       }
+//     }
+
+//   }
 
 /*----bannnerNew-------*/
 .chevron-L{
@@ -543,105 +600,6 @@
 // }
 
 /*---------home---------*/
-.mid-container{
-    display: none;
-}
-
-/*---------bannernew home----*/
-.homeBanner {
-    flex-direction: column-reverse;
-    position: relative;
-
-
-    .homeInnerBanner {
-
-      position: absolute;
-      background: transparent linear-gradient(181deg, #F1F1F100 0%, #F0F0F0 100%) 0% 0% no-repeat padding-box;
-
-      bottom: 0;
-      width: auto;
-
-      div {
-        padding: 0.5em;
-
-        h2 {
-
-          width: 100%;
-          text-align: center;
-        }
-
-        p {
-          text-align: center;
-        }
-
-        .collectionBtnDiv {
-          margin: auto;
-        }
-
-        button {
-
-          margin-bottom: 0.25em;
-
-        }
-
-
-
-        .homeBannerImg {
-          background-image: url(../Assets/banner-f.png);
-          background-size: cover;
-        }
-
-        .ThreeDotsWrapper {
-          margin: auto;
-          display: flex;
-          flex-direction: row;
-
-          .ThreeDots {
-            margin: 0.25em;
-            height: 1px;
-            width: 1px;
-            border-radius: 50%;
-
-            background: #666666 0% 0% no-repeat padding-box;
-          }
-
-          .ThreeDotsActive {
-            opacity: 0.3;
-          }
-        }
-      }
-
-
-    }
-
-    .homeImage {
-      width: 100%;
-      height: calc(95vh - 3.75rem);
-    }
-  }
-
-  .mobileHide2 {
-    display: none;
-  }
-
-  .fourImageOuter {
-
-    margin: auto;
-
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 4em;
-
-    .fourImageInner {
-      padding: 1em 0;
-      flex-direction: column;
-      align-items: center;
-
-      width: 90%;
-      max-width: 100%;
-      margin: auto;
-    }
-  }
 
 
 /*---------checkout--------*/
@@ -699,48 +657,12 @@
 }
 
 /*-------checkhome--------*/
-@media (max-width : 786px) {
-    .dekstop-button{
-        display: none;
-    }
-    .card-info{
-        input{
-            width: 100%;
-        }
-    }
-}
-@media (min-width: 786px) {
-    .mobile-button{
-      display: none;
-    }
-}
-@media (max-width : 786px) {
-    .state-input{
-        input{
-            width: 100%;
-        }
-    }
-}
-@media (max-width : 786px) {
-    .shiping-input{
-        input{
-            width: 100%;
-        }
-    }
-}
 
-@media (min-width : 786px) {
-    .contact{
-        input{
-            width: 90%;
-        }
-    }   
-}
 
-@media (min-width : 786px) {
-    .shiping-input {
-        input{
-            width: 45%;
-        }
-    }
-}
+// @media (min-width : 786px) {
+//     .shiping-input {
+//         input{
+//             width: 45%;
+//         }
+//     }
+// }

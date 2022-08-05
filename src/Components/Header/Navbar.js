@@ -51,7 +51,7 @@ const Header = () => {
 
        <nav role="navigation">
          <ul className={isActive ? "nav-links nav-active" : "nav-links"}>
-           {/* <li aria-label="Shop Categories" className="desktopHide borderBottomHead">Shop Categories</li> */}
+           <li aria-label="Shop Categories" className="desktopHide borderBottomHead">Shop Categories</li>
            <li>
              <a href="/Home/" aria-label="women products">
                Home
@@ -60,22 +60,23 @@ const Header = () => {
            
            
            <li>
-             <a href="" aria-label="women products">
+             
+             <Link to="/cart"><a href="#" aria-label="women products">
                Women
-             </a>
+             </a></Link>
            </li>
            <li>
-             <a href="" aria-label="men products">
+           <Link to="/cart"><a href="#" aria-label="men products">
                Men
-             </a>
+             </a></Link>
            </li>
            <li>
-             <a href="" aria-label="Electronics products">
+             <a href=" " aria-label="Electronics products">
              Electronics
              </a>
            </li>
            <li>
-             <a href="" aria-label="Jewellery">
+             <a href=" " aria-label="Jewellery">
              Jewellery
              </a>
            </li>
@@ -106,7 +107,7 @@ const Header = () => {
          <a href='#' aria-label="Sign in" className="mobileHide">Sign in</a> */}
 
          <Link to="/capstone/shoppingcart">
-          <img src={shoppingBag} aria-label="check shoppingbag items" alt="shoppingicon"/><span className="badge rounded-pill badge-notification bg-danger">{totalcartitem}</span> 
+          <img src={shoppingBag} aria-label="check shoppingbag items" alt="shoppingicon" className="shopbagicon"/><span className="badge">{totalcartitem}</span> 
           </Link>
         
        </div>
